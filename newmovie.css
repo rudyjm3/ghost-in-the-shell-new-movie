@@ -4,7 +4,7 @@
 }
 
 .banner {
-  background-image: url("http://www.ghostintheshellnewmovie.com/images/hero-ghost-in-the-shell-the-movie.jpg");
+  background-image: url("images/BG images/hero-ghost-in-the-shell-the-movie.jpg");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 20%;
@@ -17,7 +17,7 @@
   position: relative;
   top: 400px;
   left: 600px;
-  size: width="300px" height="150px";
+  /*size: width="300px" height="150px";*/
 }
 div {
   /*border: 1px solid red;*/
@@ -67,7 +67,7 @@ div {
   color: white;
 }
 .trailer {
-  background-image: url("http://www.ghostintheshellnewmovie.com/images/img-trailers.jpg");
+  background-image: url("images/BG images/img-trailers.jpg");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -96,13 +96,35 @@ h2 {
   margin-left: 280px;
 }
 .about_section {
-  background-image: url("http://www.ghostintheshellnewmovie.com/images/img-about-movie-cast.jpg");
+  background-image: url("images/BG images/img-about-movie-cast.jpg");
   background-size: cover;
   height: 400px;
-  overflow-y: scroll;
-  /*background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;*/
+  overflow: auto;
+  direction: rtl;
 }
+/* ======== START ABOUT SECTION SCROLLBAR STYLING ========= */
+/* width */
+.about_section::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.about_section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.about_section::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.about_section::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+/* ======== END ABOUT SECTION SCROLLBAR STYLING ========= */
 .about_info {
   display: inline-block;
   position: relative;
@@ -116,7 +138,7 @@ h2 {
   text-align: left;
   color: white;
 }
-.about-info p {
+.about_info p {
   padding-bottom: 30px;
 }
 .cast_info {
@@ -155,7 +177,7 @@ h2 {
   padding: 0 15px 10px 15px;
 }
 .gallery {
-  background-image: url("http://www.ghostintheshellnewmovie.com/images/img-image-gallery.jpg");
+  background-image: url("images/BG images/img-image-gallery.jpg");
   background-position-x: 50%;
   background-position-y: 50%;
   background-size: cover;
@@ -175,7 +197,7 @@ h2 {
   padding: 10px;
 }
 .locator {
-  background-image: url("http://www.ghostintheshellnewmovie.com/images/img-theater-locator.jpg");
+  background-image: url("images/BG images/img-theater-locator.jpg");
   background-position-x: 50%;
   background-position-y: 50%;
   background-size: cover;
@@ -250,19 +272,29 @@ since map is in line with text now. tweak map text loction.*/
   position: relative;
   background-color: #440397;
   padding: 20px 10px 20px 10px;
-  margin-top: 10;
   height: 50px;
 
 }
-.company {
+/*.company-logos img {
   display: inline-block;
   position: relative;
   float: left;
   padding: 0 10px 20px 10px;
+  vertical-align: middle;
   bottom: 5px;
-  /*margin-bottom: 15px;*/
-
-
+  margin-right: 20px;
+  margin-bottom: 15px;
+}*/
+.company-logos ul {
+  float:left;
+  position: relative;
+}
+.company-logos ul li {
+  display: table-cell;
+  vertical-align: bottom;
+}
+.company-logos ul li img {
+  margin-left: 20px;
 }
 #footer p {
   /*color: white;
@@ -291,7 +323,15 @@ since map is in line with text now. tweak map text loction.*/
   right: 10px;
   margin-right: 40px;
   margin-left: 10px;
-  /*margin-bottom: 25px*/
-  line-height: 20px;
-
+}
+.social_icon a {
+  margin-left: 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  line-height: 2;
+}
+.social_icon a:hover {
+  color: #328afc;
+  transition: 0.5s;
 }
