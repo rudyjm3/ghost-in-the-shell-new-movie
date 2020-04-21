@@ -12,14 +12,18 @@
   background-repeat-y: no-repeat;
   height: 600px;
 }
-.logo {
-  display: inline-block;
+.logo-container {
   position: relative;
-  top: 400px;
-  left: 600px;
-  /*size: width="300px" height="150px";*/
+  top: 70%;
+  text-align: center;
 }
-file:///images/BG images/hero-ghost-in-the-shell-the-movie.jpg
+/*.animate-logo {
+  opacity: 1;
+}*/
+.logo {
+  width: 444px;
+  height: 157px;
+}
 div {
   /*border: 1px solid red;*/
 }
