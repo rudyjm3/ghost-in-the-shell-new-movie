@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="newmovie.css">
-  <link rel="icon" href="favicon.ico?" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="/assets/jquery.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ghost in The Shell: The New Movie | Non Official Site</title>
+  <meta name="description" content="Ghost in the shell project">
+  <meta name="author" content="Rudolph Mims">
+
+  <link rel="stylesheet" type="text/css" href="css/newmovie.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="favicon.ico?" type="image/x-icon">
+
 </head>
 
 <body>
@@ -71,7 +79,7 @@
 <div class="gallery">
   <h2>Image Gallery</h2>
   <div class="pictures">
-    <a href="images/large/1.jpg" target="_blank"><img src="images/thumbnail/1-thumbnail.jpg" /></a>
+    <a href="images/large/1.jpg" target="_blank" data-lightbox="mygallery"><img src="images/thumbnail/1-thumbnail.jpg" /></a>
 
     <a href="images/large/2.jpg" target="_blank"><img src="images/thumbnail/2-thumbnail.jpg" /></a>
 
@@ -140,4 +148,6 @@ We'll display the nearest theaters showing<br>Ghost in the Shell: The New Movie.
   </div>
 </div>
 
+<script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
+</html>
