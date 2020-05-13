@@ -1,10 +1,11 @@
+@import "../css/lightbox.min.css";
 * {
   margin: 0;
   padding: 0;
 }
 
 .banner {
-  background-image: url("images/BG images/hero-ghost-in-the-shell-the-movie.jpg");
+  background-image: url("../images/BG images/hero-ghost-in-the-shell-the-movie.jpg");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 20%;
@@ -72,7 +73,7 @@ div {
   color: white;
 }
 .trailer {
-  background-image: url("images/BG images/img-trailers.jpg");
+  background-image: url("../images/BG images/img-trailers.jpg");
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -101,7 +102,7 @@ h2 {
   margin-left: 280px;
 }
 .about_section {
-  background-image: url("images/BG images/img-about-movie-cast.jpg");
+  background-image: url("../images/BG images/img-about-movie-cast.jpg");
   background-size: cover;
   height: 400px;
   overflow: auto;
@@ -182,7 +183,7 @@ h2 {
   padding: 0 15px 10px 15px;
 }
 .gallery {
-  background-image: url("images/BG images/img-image-gallery.jpg");
+  background-image: url("../images/BG images/img-image-gallery.jpg");
   background-position-x: 50%;
   background-position-y: 50%;
   background-size: cover;
@@ -214,7 +215,7 @@ h2 {
   transform: scale(1.1);
 }
 .locator {
-  background-image: url("images/BG images/img-theater-locator.jpg");
+  background-image: url("../images/BG images/img-theater-locator.jpg");
   background-position-x: 50%;
   background-position-y: 50%;
   background-size: cover;
