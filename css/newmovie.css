@@ -193,6 +193,7 @@ h2 {
 }
 .gallery h2 {
   text-align: left;
+  padding: 100px 0;
 }
 .pictures {
   /*position: relative;
